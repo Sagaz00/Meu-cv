@@ -1,0 +1,85 @@
+header{
+    display: flex;
+    justify-content: space-between; /*alinha as coisa uma pra cada lado*/
+    background-color:  #003400;
+    padding: 10px 20px;  
+    border-bottom: solid 10px #000;  
+}
+
+nav{
+    text-align: right;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+a{
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;/*tamanho da font*/
+    font-family: "Fira Code";/*qual a fonte vai ser usada*/
+    font-weight: 500;/*tamanho da font*/
+    text-decoration: none;/*tira a decoracao do texto*/
+    margin-right:30px;
+}
+
+a::before{ /*pseudo elemento usado pra fazer um css no final de algun texto */
+    content: ""; /* teg de conteudo do CSS */
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+    background-color:#340034;
+}
+
+#button{
+    display: inline-block;/*define um comportamento na caixa*/
+    background: #340034;
+    height:60px;/*altura*/
+    line-height: 60px; /*define a altura de uma caixa de linha*/
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 0 #000;/*adiciona sombreado*/
+    margin-right: 0;
+    transition: transform 200ms ease-in-out;/*teg para fazer uma animaçao, volocidade da animaçao e o tipo da animaçao */
+}
+
+#button:hover{/*teg para fazer uma animaçao qunado passa o mause em cima*/
+    transform: scale(1.05);/*propriedade de escala do tamanho*/
+}
+
+.logo{
+    display:inline-block;
+    border: solid 1px #000;
+    box-shadow:5px 5px 0 #000;
+    padding: 10px;
+    align-items: center;
+    width: 610px;
+    height: 184px;
+    background: #3A4042;
+    margin-top: 193px;
+    margin-left: 91px;
+}
+
+.conterner{
+    width: 940px;
+    height: 780px;
+    top: 80px;
+    background-image: url(../assets/img/img-baner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    text-shadow: 4px 4px 0 #000;
+
+}
+
+.conterner-0{    
+    background-image: url(../assets/img/img-baner-1.png);  /*usado para por uma img*/
+    background-repeat: no-repeat; /* usada para nao repetir a img */
+    background-size: cover; /* teg para deixa a img melhor pocisionada */
+    background-position: left center; /*teg para posicionar a img */
+    width: 1343px;
+    height: 797px;
+}
